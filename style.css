@@ -1,0 +1,218 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #1B1B1B;
+    overflow-x:hidden ;
+    font-family:proximanova-semibold-webfont,Arial,sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+   margin: 0 auto;
+}
+
+/**
+* Header CSS start
+*/
+
+header{
+    background-color: #222428;
+    color: white;
+    position: sticky;
+    top: 0;
+    /* display: flex; */
+}
+
+.header_cont.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 8px 0px;
+    /* align-items: center; */
+}
+
+.left_container, .right_container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.svg_color{
+    fill: white;
+    
+}
+
+.logo img{
+    width: 90px;
+}
+
+.topItems{
+    padding: 8px 15px;
+}
+
+.search_bar input{
+
+    background-color: #1B1B1B;
+    border: 1px solid rgb(48,48,48);
+    border-radius: 30px;
+    height: 40px;
+    width: 400px;
+    padding: 10px 15px;
+    flex: 1;
+}
+
+.header_btn{
+    border-radius: 20px;
+    border: none;
+    padding: 7px 15px;
+    font-weight: 300;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.logIn_cont{
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-weight: 300;
+    color: hsla(0,0%,100%,.75);
+    font-family:proximanova-semibold-webfont,Arial,sans-serif;
+}
+
+/**
+* Header CSS End
+*/
+
+/**
+* Navigation header CSS start
+*/
+
+.navigation_bar{
+    position: sticky;
+    top: 60px;
+    min-height: 60px;
+    background-color: #1B1B1B;
+}
+
+.navigation_cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+    margin-left: 40px;
+}
+
+.nav_link{
+    font-size: 16px;
+    color: hsla(0,0%,100%,.9);
+    line-height: 20px;
+    margin-right: 30px;
+    letter-spacing: -0.9px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+/**
+* Navigation header CSS end
+*/
+
+/**
+* song slider CSS start
+*/
+
+/**
+* song slider CSS end
+*/
+
+
+
+/**
+* song card CSS start
+*/
+.song_section{
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.cont_heading{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: hsla(0,0%,100%,.9);
+    text-transform: capitalize;
+}
+
+.song_cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.song_card{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.song_img img{
+    width: 160px;
+    height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.song_name{
+    color: hsla(0,0%,100%,.9);
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.overlay{ 
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(0,0,0,.3);
+    cursor: pointer;
+    background-image: url(https://a10.gaanacdn.com/gn_img/images/play_1621599900.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: calc(50% + 1px) 50%;
+}
+/**
+* song card CSS end
+*/
+
+/**
+*start of sidebar css
+*/
+
+#sidebar{
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: brown;
+    z-index: 1;
+    transition: left 0.3s;
+}
+
+#content{
+
+
+    transition: margin-left 0.3s;
+}
+
+
+
+.sidebar-open #sidebar{
+    left: 0;
+}
